@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || '/api/products';
+const API_URL = process.env.REACT_APP_API_URL || '/api/db.json/products';
 
-console.log(`json server is running on server ${API_URL}`)
+console.log(`Server is running on ${API_URL}`)
 
 // Fetching (Get) the product from db.json
 export const fetchProducts = async () => {

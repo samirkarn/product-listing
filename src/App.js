@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 function App() {
   return (
     <div className="App">
-      <h1 style={{textAlign: 'center'}}>Product Listing with Charts</h1>
+      <h1 style={{textAlign: 'center'}}>Product Listing with Charts !!</h1>
       <ProductList />
       <Toaster />
     </div>

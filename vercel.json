@@ -1,6 +1,28 @@
 {
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/json-server.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "public/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "src/**/*.js",
+        "use": "@vercel/node"
+      }
+    ],
     "rewrites": [
-      { "source": "/api/(.*)", "destination": "/api/json-server.js" }
+      {
+        "source": "/api/(.*)",
+        "destination": "/api/json-server.js"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/public/$1"
+      }
     ]
   }
   
